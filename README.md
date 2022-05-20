@@ -9,13 +9,13 @@ Small Python script for viewing ASCII art/animations.
 
 ## How to Use
 
+Import the ascii_animator.py module into your project
+
 Make sure your ascii art is in its own .py file. Feel free to add multiple lists for different animations.
 
-Change the imported py up in the imports
+Import your art file if needed
 
-Change the ascii variable to art.[your_list_name]
-
-Run the code in your favourite IDE
+Call ascii_animator.animate(ascii,framerate,seconds) to test your animations (or play them in your program if you like)
 
 ### To-do
 - Might make it a bit friendlier for use outside of an IDE, but really it's just intended as a helper script for projects that might use ASCII art and need a quick way to check they animate correctly before pulling them into Unity or using them elsewhere.
