@@ -15,12 +15,14 @@ def main():
     # !- CAN EDIT -!    How long the animation should play for. Note that this will not always be 100% accurate because ASCII art is code based, not an actual drawing.
     seconds = 20
 
+    # Execution of frames takes longer than it should. Over time this adds up to about 1 second per 10 seconds. This offset corrects that.
+    offset = 0.009
+
     # Total frames we're expecting in the animation and the actual frames per millisecond we'll be using for Sleep
     total_frames = framerate * seconds
     framerate_in_ms = (seconds / total_frames) - offset
 
-    # Execution of frames takes longer than it should. Over time this adds up to about 1 second per 10 seconds. This offset corrects that.
-    offset = 0.009
+
 
     # !!!- CHANGE THIS -!!! - The art you're loading (don't forget to change the py up above in the imports)
     # Examples: art.bounce  art.spin                     
